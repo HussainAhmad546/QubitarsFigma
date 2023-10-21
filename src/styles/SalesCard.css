@@ -1,0 +1,104 @@
+.sales-card-container{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.left-section{
+    width: 68%;
+    height: 400px;
+}
+.sale-1{
+    width: 48%;
+    height: 170px;
+    background-position: bottom;
+    background-color: #F2F2F2;
+    margin-right: 10px;
+
+}
+.sales img{
+    cursor: pointer;
+}
+.sale-2{
+    width: 49%;
+    height: 170px;
+    background-position: bottom;
+    margin-right: 10px
+}
+.sale-2 img{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.sale{
+    color: #0F75BC;
+    font-weight: bold;
+    font-size: 20px;
+}
+.all{
+    display: block;
+}
+
+.sale-3{
+    width: 99%;
+    height: 180px;
+    background-image: url(../images/TwoWatches.png);
+    background-size: 320px 200px;
+    background-repeat: no-repeat;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sale-3 p{
+    margin-left: 400px;
+    width: 30%;
+    text-align: left;
+    margin-top:30px;
+    margin-bottom: 0;
+}
+
+.right-section{
+    width: 36%;
+    background-image: url(../images/Sale\ Jug.png);
+    background-repeat: no-repeat;
+    background-size: 420px 400px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .sales-card-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section {
+        width: 100%;
+        order: 2;
+    }
+
+    .sale-1, .sale-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .sale-3 {
+        width: 100%;
+    }
+
+    .sale-3 p {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+        order: 1;
+    }
+}

@@ -1,0 +1,40 @@
+.service-header{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    border: 1px solid white;
+    height: 550px;
+    margin-top: 20px;
+    /* background-image: url(../images/SliderImage.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: right; */
+    /* background-color: #F7F7F7; */
+}
+.service-details {
+    padding: 20px;
+  }
+  
+  .service-word {
+    color: orange;
+    font-size: 24px;
+  }
+  
+  .service-details h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .service-details p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .service-image {
+    padding: 20px;
+  }
+  
+  /* Additional styling for your divs */
+  

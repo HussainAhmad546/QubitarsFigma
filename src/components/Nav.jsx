@@ -17,7 +17,7 @@ const Nav = () => {
             <nav className="nav-list">
                 <ul>
                     <li onClick={()=>navigate("/")}>Home</li>
-                    <li onClick={()=>navigate("/about")}>About</li>
+                    <li onClick={()=>navigate("/about")}>Ab0out</li>
                     <li onClick={()=>navigate("/service")}>Service</li>
                     <li onClick={()=>navigate("/blog")}>Blog</li>
                     <li onClick={()=>navigate("/contact")}>Contact</li>

@@ -9,6 +9,7 @@ const Nav = () => {
 
     return (
         <div className="nav">
+            <div className="nav-wrapper">
             <button className="all-categories-button">
                 <FaBars className="icon" />
                 All Categories
@@ -23,6 +24,7 @@ const Nav = () => {
                 </ul>
             </nav>
             <button className="quote-button">Request Quote</button>
+            </div>
         </div>
     );
 };

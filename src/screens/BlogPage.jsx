@@ -1,11 +1,23 @@
-import React from 'react'
+import React from 'react';
+import BlogList from '../components/BlogList';
+import '../styles/Blogs.css';
 
-const BlogPage = () => {
+const OurBlog = () => {
   return (
-    <div>
-      this is blog page
-    </div>
-  )
-}
+    <>
+      <div className="our-blog">
+        <div className="container text-center">
+          <h1>Our Blog</h1>
+          <p>
+            You offer a good product, make advertising, analyze the market but <br />
+            still have no improvement
+          </p>
+        </div>
+      </div>
+      <BlogList />
+    </>
+  );
+};
 
-export default BlogPage
+export default OurBlog;
+

@@ -6,12 +6,18 @@ body{
 .nav {
     height: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
     background: #F7941D;
     color: white;
     margin-top: 30px;
+  }
+
+  .nav-wrapper{
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .all-categories-button {
@@ -23,7 +29,6 @@ body{
     height: 60px;
     border-radius: 20px 20px 0px 0px;
     margin-top: -10px;
-    margin-left: 50px;
     cursor: pointer;
     width: 150px;
   }
@@ -36,6 +41,7 @@ body{
   .nav-list {
     color: white;
     width: 30%;
+    margin-top: 10px;
   }
   .nav-list ul{
     display: flex;
@@ -52,34 +58,43 @@ body{
     background: #0F75BC;
     color: white;
     border: none;
-    padding: 13px;
+    padding: 10px;
     border-radius: 40px;
     width: 150px;
     cursor: pointer;
-    margin-right: 40px;
   }
 
+/* Existing CSS up to the media query */
+
 @media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        height: 150px;
-    }
+  .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 150px;
+  }
 
-    .nav-list {
-        width: 100%;
-    }
+  .nav-wrapper {
+      flex-direction: column;
+      align-items: flex-start; /* Apply styles to the wrapper */
+      height: auto; /* Remove the fixed height */
+      padding: 20px; /* Add some padding to the wrapper */
+      width: 100%;
+  }
 
-    .all-categories-button{
-        width: 30%;
-        border-radius: 20px 20px 0px 0px;
-        text-align: center;
-        margin: auto;
-    }
-    .quote-button {
-        margin: auto;
-    }
+  .all-categories-button {
+      width: 40%; /* Adjust the width to 100% */
+      border-radius: 20px 20px 0px 0px;
+      text-align: left; /* Align text to the left */
+      margin: auto;
+      margin-top: -35px;
+  }
+
+  .quote-button {
+      width: 40%; /* Adjust the width to 100% */
+      margin: auto; /* Remove the margin */
+  }
 }
+
 
 
 

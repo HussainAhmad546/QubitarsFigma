@@ -2,39 +2,138 @@
     width: 90%;
     margin: auto;
     justify-content: space-between;
-    border: 1px solid white;
-    height: 550px;
+    height: 480px;
     margin-top: 20px;
-    /* background-image: url(../images/SliderImage.png); */
-    /* background-repeat: no-repeat; */
-    /* background-position: right; */
-    /* background-color: #F7F7F7; */
 }
-.service-details {
-    padding: 20px;
+.service-details p{
+    text-align: left;
   }
   
   .service-word {
     color: orange;
     font-size: 24px;
+    margin-bottom: 0%;
+    margin-top: 40px;
   }
   
-  .service-details h2 {
-    font-size: 32px;
+  .service-details h1 {
+    font-size: 45px;
     font-weight: bold;
     color: black;
-    margin-top: 10px;
+  }
+
+  .service-image{
+    margin-left: 80px;
   }
   
-  .service-details p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.6;
-  }
   
-  .service-image {
-    padding: 20px;
-  }
   
-  /* Additional styling for your divs */
+.service-card {
+  box-shadow: 2px 2px 5px 0 rgba(255, 165, 0, 0.5);
+  position: relative;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: orange;
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.service-card-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: rgba(247, 148, 29, 0.15);
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+
+.card-title {
+  text-align: left;
+}
+
+.card-text {
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* OurPricing.css */
+.pricing-card {
+  width: 100%;
+  background: orange;
+  color: white;
+}
+
+.gold-plan{
+  background-color: rgba(247, 148, 29, 1);
+}
+
+.gold-plan p{
+  color: white;
+}
+.gold-plan li{
+  color: white;
+}
+.gold-plan h3{
+  color: white;
+}
+
+.Plan-title-1, .Plan-title-3{
+  background-color: orange;
+  color: white;
+}
+.Plan-title-2{
+  background-color: blue;
+  color: white;
+}
+
+.list-unstyled {
+  text-align: left;
+
+}
+
+.list-unstyled li{
+  margin-top: 10px;
+}
+
+.starting-plan-button{
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.gold-plan-button{
+  background-color: rgba(255, 255, 255, 1);
+  color: orange;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.gold-plan-button:hover{
+  background-color:orange;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
   
+/* OurTeam.css */
+
+
+.orange-text {
+  color: orange;
+}

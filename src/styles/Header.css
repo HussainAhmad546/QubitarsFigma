@@ -29,7 +29,7 @@
   .search-button {
     position: absolute;
     right: 1px;
-    top: 1px;
+    top: 0.3px;
     background-color:#F7941D;
     border: 0;
     color: #FFF;

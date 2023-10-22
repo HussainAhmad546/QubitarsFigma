@@ -1,0 +1,52 @@
+.our-blog {
+  background-image: url(../images/OurBlog.png);
+  background-size: cover;
+  background-position: center;
+  height: 406px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-blog .container {
+  text-align: center;
+}
+
+.our-blog h1 {
+  color: white;
+}
+
+.our-blog p {
+  color: white;
+}
+
+ 
+ 
+ .blog-card {
+  transition: background-color 0.2s;
+}
+
+.body-card{
+  background-color: #FBFBFB;
+}
+.card-body:hover{
+  background-color: #FEEFDD;
+}
+
+.blog-card:nth-child(3n+2) .btn {
+  background: #F5F5F5;
+  color: white; 
+}
+
+.blog-card .btn:hover {
+  background-color: #F7941D;
+  color: white;
+}
+
+.blog-card .btn {
+  width: 100%;
+  background: #F5F5F5;
+  color: black; 
+  font-weight: bold;
+}

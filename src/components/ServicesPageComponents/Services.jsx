@@ -9,7 +9,7 @@ const Services = () => {
         <div className="col-md-6">
           <div className="service-details">
             <p className="service-word">Service</p>
-            <h2>Large experience in sales</h2>
+            <h1>Large experience <br/>in sales</h1>
             <p>
               We have been working in the marketing sphere for more than 35 years. During this time, we successfully finished 10,000+ projects. Our company guarantees the quality that has been tested over the years.
             </p>

@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import ContactPage from './screens/ContactPage';
 import ServicePage from './screens/ServicePage';
 import BlogPage from './screens/BlogPage';
+import QoutePage from './screens/QoutePage';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/service" element={<ServicePage/>} />
         <Route path="/blog" element={<BlogPage/>} />
+        <Route path="/qoute" element={<QoutePage/>} />
+
       </Routes>
       <Footer/>
     </BrowserRouter>

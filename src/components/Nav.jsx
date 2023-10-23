@@ -2,6 +2,7 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import '../styles/Nav.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
@@ -23,7 +24,8 @@ const Nav = () => {
                     <li onClick={()=>navigate("/contact")}>Contact</li>
                 </ul>
             </nav>
-            <button className="quote-button">Request Quote</button>
+            <Link to='/qoute'><button className="quote-button" Link='/qoute'>Request Quote</button></Link>
+            
             </div>
         </div>
     );

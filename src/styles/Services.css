@@ -26,6 +26,19 @@
     margin-left: 80px;
   }
   
+  /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .service-header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .service-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
   
   
 .service-card {
@@ -127,6 +140,8 @@
   border: none;
   border-radius: 5px;
 }
+
+
 
 
 

@@ -87,6 +87,22 @@ font-family: Inter;
     color:white;
 }
 
+@media (max-width: 768px) {
+    .how-we-work-main h1 {
+      font-size: 30px;
+      line-height: 40px; 
+    }
+  
+    .how-we-work-main p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    .how-we-work-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }  
 /* whyus */
 
 .left-div{

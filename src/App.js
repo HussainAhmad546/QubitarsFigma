@@ -9,6 +9,8 @@ import ContactPage from './screens/ContactPage';
 import ServicePage from './screens/ServicePage';
 import BlogPage from './screens/BlogPage';
 import QoutePage from './screens/QoutePage';
+import ProductsPage from './screens/ProductsPage';
+
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
         <Route path="/service" element={<ServicePage/>} />
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/qoute" element={<QoutePage/>} />
+        <Route path="/products" element={<ProductsPage/>} />
 
       </Routes>
       <Footer/>

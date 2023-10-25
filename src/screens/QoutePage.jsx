@@ -14,14 +14,14 @@ const QuotePage = () => {
           </p>
         </div>
       </div>
-      <div className="d-flex justify-content-center"> {/* Centering the quote-container */}
+      <div className="d-flex justify-content-center">
         <div className="qoute-container">
           <div className="contact-us-right">
-            <div className="input-group">
+            <div className="custom-input-group">
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Your Email" />
             </div>
-            <div className="input-group">
+            <div className="custom-input-group">
               <input type="tel" placeholder="Your Phone Number" />
               <input type="text" placeholder="Subject" />
             </div>

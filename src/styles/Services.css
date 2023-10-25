@@ -142,7 +142,36 @@
 }
 
 
+.service-search-container {
+  height: 40px;
+  width: 400px;
+  background-color:#F3F3F3;
+  position: relative;
+  border-radius: 30px;
+  padding: 3px 50px 3px 10px;
+  border: 1px solid grey;
+}
+.service-Subsribe-box {
+  background-color: #F3F3F3;
+  outline: none;
+  height: 35px;
+  font-size: 15px;
+  border: 0;
+  width: 100%;
+}
+.service-button {
+  position: absolute;
+  right: 1px;
+  top: 0.2px;
+  background-color:#0F75BC;
+  border: 0;
+  color: #FFF;
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
 
+}
 
 
   

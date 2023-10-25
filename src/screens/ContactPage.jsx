@@ -27,19 +27,19 @@ const ContactPage = () => {
           <p className='paragrapgh'>support@example.com</p>
         </div>
         <div className="contact-us-right">
-          <div className="input-group">
+          <div className="custom-input-group">
             <input type="text" placeholder="Your Name" />
             <input type="email" placeholder="Your Email" />
           </div>
-          <div className="input-group">
+          <div className="custom-input-group">
             <input type="tel" placeholder="Your Phone Number" />
             <input type="text" placeholder="Subject" />
           </div>
           <textarea rows="5" placeholder="Your Message"></textarea>
-          <button className="submit-button">Submit</button>
+          <button className="submit-button">Send Messege</button>
         </div>
       </div>
-        <img src={mapImage} alt="mapimage" />
+        <img src={mapImage} alt="mapimage" className='mapImage' />
     </>
   );
 };

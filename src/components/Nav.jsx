@@ -21,6 +21,7 @@ const Nav = () => {
                     <li onClick={()=>navigate("/service")}>Service</li>
                     <li onClick={()=>navigate("/blog")}>Blog</li>
                     <li onClick={()=>navigate("/contact")}>Contact</li>
+                    <li onClick={() => navigate("/products")}>Products</li>
                 </ul>
             </nav>
             <button className="quote-button">Request Quote</button>

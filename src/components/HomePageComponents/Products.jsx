@@ -27,8 +27,11 @@ import React from 'react';
 import '../../styles/Products.css';
 import { FaArrowRight } from 'react-icons/fa';
 import productData from '../../data/productsData'; // Import the product data
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
+
+  const navigate=useNavigate()
   return (
     <div className='products-container'>
       <nav className='products-list'> 
@@ -47,7 +50,7 @@ const Products = () => {
             <h3 style={{textAlign:'center', color:'black', fontSize:'15px', fontWeight:'bold' }}>{product.name}</h3>
             <p>{product.description}</p>
             <span className="price">{product.price}</span>
-            <button className="buy-button">Buy Now</button>
+            <button className="buy-button" onClick={()=>navigate("/Singleproduct")} >Buy Now</button>
           </div>
         ))}
       </div>

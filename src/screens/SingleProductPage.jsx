@@ -1,9 +1,10 @@
 import React from 'react'
+import SingleProductsData from '../components/singleproductpage/SingleProductsData'
 
 const SingleProductPage = () => {
   return (
     <div>
-      this is single product page
+     <SingleProductsData />
     </div>
   )
 }

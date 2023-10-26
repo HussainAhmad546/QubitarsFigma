@@ -7,7 +7,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer'
 import ContactPage from './screens/ContactPage';
 import ServicePage from './screens/ServicePage';
-import BlogPage from './scre
+import BlogPage from './screens/BlogPage'
 import ProductsPage from './screens/ProductsPage';
 import SingleProductPage from './screens/SingleProductPage';
 import QoutePage from './screens/QoutePage';

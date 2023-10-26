@@ -3,13 +3,15 @@ import pad from '../images/Apple Series 8.jpg'
 import pods from '../images/pods.jpg'
 import watch from '../images/watch.png'
 
+
+
 const productData = [
     {
       id: 1,
       name: 'Apple Series 8 G3546',
       pic:watch,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
-      price: '$10.99',
+      price: '$10.99'
     },
     {
       id: 2,

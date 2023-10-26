@@ -10,6 +10,8 @@ import ServicePage from './screens/ServicePage';
 import BlogPage from './screens/BlogPage';
 import QoutePage from './screens/QoutePage';
 import ProductsPage from './screens/ProductsPage';
+import BlogDetail from './screens/BlogDetailPage';
+// import blogData from './data/blogdata';
 
 
 const App = () => {
@@ -26,6 +28,10 @@ const App = () => {
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/qoute" element={<QoutePage/>} />
         <Route path="/products" element={<ProductsPage/>} />
+        <Route
+          path="/blog/:id"
+          element={<BlogDetail />}
+        />
 
       </Routes>
       <Footer/>

@@ -31,7 +31,12 @@
   background-color: #FBFBFB;
 }
 .body-card:hover{
-  background-color: #FEEFDD;
+  background-color: #FEEFDD,
+  
+}
+.body-card:hover .btn{
+  background-color: #F7941D;
+  color: white ;
 }
 
 .blog-card:nth-child(3n+2) .btn {
@@ -39,10 +44,7 @@
   color: white; 
 }
 
-.blog-card .btn:hover {
-  background-color: #F7941D;
-  color: white;
-}
+
 
 .blog-card .btn {
   width: 100%;
@@ -50,3 +52,95 @@
   color: black; 
   font-weight: bold;
 }
+
+
+
+/* BlogDetail.css */
+
+.custom-container{
+  width: 90%;
+  margin: auto;
+}
+
+.right-side-widgets {
+  padding: 20px;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget-heading {
+  color: orange;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+
+.search-widget input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.person-icon{
+  background-color: white;
+}
+.post-date{
+  text-align: left;
+  margin-left: 15px;
+}
+.popular-post-details h4{
+  margin-left: 15px;
+}
+
+.categories-list {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.categories-list li {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.category-item:hover {
+  background-color: rgba(247, 148, 29, 1); 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tags-list li:hover {
+  background-color: rgba(247, 148, 29, 1); 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-item {
+  list-style-type: none;
+  background: rgba(245, 245, 245, 1);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+.tags-list {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.tags-list li {
+  margin-bottom: 10px;
+  background: rgba(245, 245, 245, 1);
+  padding: 5px;
+  box-shadow: 1px 1px 1px #ccc;
+  padding: 10px;
+  display: inline;
+  margin-right: 15px;
+  
+}
+
+

@@ -41,8 +41,8 @@
 }
 .Footer-button {
   position: absolute;
-  right: 4px;
-  top: 3px;
+  right: 1px;
+  top: 0.2px;
   background-color:#F7941D;
   border: 0;
   color: #FFF;

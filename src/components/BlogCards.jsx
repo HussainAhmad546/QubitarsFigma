@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaUser } from 'react-icons/fa';
 import '../styles/Blogs.css'
+import { Link } from 'react-router-dom';
 
 const BlogCard = ({ blog }) => {
   return (
@@ -13,7 +14,9 @@ const BlogCard = ({ blog }) => {
           <p className="card-details">
             <FaUser className="person-icon" /> {blog.author} <span className="separator">|</span> {blog.date}
           </p>
-          <button className="btn btn-block">Continue Reading</button>
+          <Link to={`/blog/${blog.id}`} className="btn btn-block">
+            Continue Reading
+          </Link>
         </div>
       </div>
     </div>

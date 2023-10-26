@@ -13,6 +13,10 @@ const Services = () => {
             <p>
               We have been working in the marketing sphere for more than 35 years. During this time, we successfully finished 10,000+ projects. Our company guarantees the quality that has been tested over the years.
             </p>
+            <div class="service-search-container">
+            <input type="text" class="service-Subsribe-box" placeholder="Enter email"/>
+            <button class="service-button">Get a Free Qoute</button>
+            </div>
           </div>
         </div>
         <div className="col-md-6">

@@ -7,9 +7,13 @@ import Nav from './components/Nav';
 import Footer from './components/Footer'
 import ContactPage from './screens/ContactPage';
 import ServicePage from './screens/ServicePage';
-import BlogPage from './screens/BlogPage';
+import BlogPage from './scre
 import ProductsPage from './screens/ProductsPage';
 import SingleProductPage from './screens/SingleProductPage';
+import QoutePage from './screens/QoutePage';
+import BlogDetail from './screens/BlogDetailPage';
+
+
 
 const App = () => {
   return (
@@ -25,7 +29,11 @@ const App = () => {
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/Singleproduct" element={<SingleProductPage />} />
-        
+        <Route path="/qoute" element={<QoutePage/>} />
+        <Route
+          path="/blog/:id"
+          element={<BlogDetail />}
+        />
       </Routes>
       <Footer/>
     </BrowserRouter>

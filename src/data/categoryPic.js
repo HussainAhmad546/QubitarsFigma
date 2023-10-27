@@ -1,9 +1,9 @@
-import pic1 from "../images/Rectangle 93.png"
-import pic2 from "../images/Rectangle 92.png"
-import pic3 from "../images/Rectangle 94.png"
-import pic4 from "../images/Rectangle 95.png"
-import pic5 from "../images/Rectangle 96.png"
-import pic6 from "../images/Rectangle 97.png"
+import pic1 from "../images/Chair.png"
+import pic2 from "../images/Headphone.png"
+import pic3 from "../images/Sofa.png"
+import pic4 from "../images/CategoryWatch.png"
+import pic5 from "../images/Shoes.png"
+import pic6 from "../images/Bag.png"
 export  const category=[
     {
         pic:pic1,

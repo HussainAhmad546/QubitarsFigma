@@ -8,10 +8,9 @@ const SingleProductsData = () => {
     <div className='image-div'><img src={pic1} /></div>
           <div className='detail-div'>
           <h1>Iphone Apple 13 pro Max</h1>
-          <h2>Ratiing</h2>
+          <h2>Rating</h2>
           <hr></hr>
               <table >
-                 
                   <tr>
                       <td>Model:</td>
                       <td>13 Pro Max</td>
@@ -47,7 +46,6 @@ const SingleProductsData = () => {
                           <input type='color' value='#FF0000' disabled></input>
                           <input type='color' value='#D3D3D3' disabled></input>
                           <input type='color' disabled></input>
-
                       </td>
                   </tr>
 

@@ -3,14 +3,22 @@
     margin: auto;
     justify-content: space-between;
     border: 1px solid white;
-    height: 400px;
+    height: 800px;
+    margin-top: 20px;
+}
+
+.all-products-container{
+  width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    border: 1px solid white;
+    height: 1600px;
     margin-top: 20px;
 }
 
 .products-list {
     color: black;
     width: 100%;
-    /* border: 1px solid red; */
     margin-bottom: 0%;
   }
   .products-list ul{
@@ -33,18 +41,6 @@
     color:orange;
   }
 
-
-
-
-
-
-  .products-container {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    /* background-color: #F7F7F7; */
-    height: 700px;
-  }
   
   .products-list ul {
     display: flex;
@@ -77,7 +73,6 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
-    /* border: 1px solid red; */
   }
   .product-item:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);

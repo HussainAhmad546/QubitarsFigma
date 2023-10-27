@@ -3,8 +3,8 @@ import FeatureCategories from './../components/HomePageComponents/FeatureCategor
 import Testimonials from '../components/HomePageComponents/Testimonials'
 import Slider from '../components/HomePageComponents/Slider'
 import SalesCard from '../components/HomePageComponents/SalesCard'
-import Products from '../components/HomePageComponents/Products'
-import SingleProductPage from './SingleProductPage'
+import Products from '../components/HomePageComponents/HomePageProducts'
+
 
 
 const HomePage = () => {
@@ -15,7 +15,6 @@ const HomePage = () => {
    <Products />
    <FeatureCategories />
    <Testimonials />
-   <SingleProductPage/>
    </>
   )
 }

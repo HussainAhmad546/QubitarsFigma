@@ -1,7 +1,6 @@
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa';
 import "../../styles/productspageslider.css"
-import pic from "../../images/products.jpeg"
+import {BsArrowRight} from 'react-icons/bs'
 
 const ProductsPageSlider = () => {
   return (
@@ -9,10 +8,10 @@ const ProductsPageSlider = () => {
           <div className='pic-wrapper'>
           </div>
           <div className="text-div">
-            <h4>New Collection</h4>
+            <h4 style={{marginTop:'50px'}}>New Collection</h4>
             <h1>Smart Phone</h1>
             <h6>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to</h6>
-            <button>Go to Collection</button>
+            <button>Go to Collection<span style={{marginLeft:'10px'}}><BsArrowRight/></span></button>
           </div>
       </div>
   )

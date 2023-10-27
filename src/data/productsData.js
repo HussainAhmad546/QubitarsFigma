@@ -62,6 +62,62 @@ const productData = [
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       price: '$7.99',
     },
+    {
+      id: 9,
+      name: 'Apple Series 8 G3546',
+      pic:watch,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$10.99'
+    },
+    {
+      id: 10,
+      name: 'Apple Series 8 G3546',
+      pic:pad,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$19.99',
+    },
+    {
+      id: 11,
+      name: 'Apple Series 8 G3546',
+      pic:pods,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$14.99',
+    },
+    {
+      id: 12,
+      name: 'Apple Series 8 G3546',
+      pic:toolkit,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$9.99',
+    },
+    {
+      id: 13,
+      name: 'Apple Series 8 G3546',
+      pic:watch,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$12.99',
+    },
+    {
+      id: 14,
+      name: 'Apple Series 8 G3546',
+      pic:pad,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$11.99',
+    },
+    {
+      id: 15,
+      name: 'Apple Series 8 G3546',
+      pic:pods,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$8.99',
+    },
+    {
+      id: 16,
+      name: 'Apple Series 8 G3546',
+      pic:toolkit,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
+      price: '$7.99',
+    },
   ];
   
   export default productData;

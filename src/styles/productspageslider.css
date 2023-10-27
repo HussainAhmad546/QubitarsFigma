@@ -1,8 +1,8 @@
 .productsPage-slider-container{
     width: 90%;
     margin: 3rem auto;
-    border: 2px solid red;
     display: flex;
+    background-color: #F5F5F5;
 
     
    
@@ -11,7 +11,7 @@
     width: 50%;
     height: 500px;
     /* border: 2px solid green; */
-    background-image: url("../images/products.jpeg");
+    background-image: url("../images/mulitplesIphones.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,16 +51,16 @@
 }
 
 .text-div button{
-    width:15.81rem;
-    height: 4.19rem;
+    width:12.81rem;
+    height: 3.19rem;
     color: white;
     border-radius: 50px;
     background-color: #0F75BC;
     border: none;
     font-family: Inter;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0em;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
     
 }

@@ -1,15 +1,14 @@
 import React from 'react'
-import Products from '../components/HomePageComponents/Products'
+import AllProducts from '../components/productsPageComponent/AllProducts'
 import ProductsPageSlider from '../components/productsPageComponent/ProductsPageSlider'
 import ProductsCategory from '../components/productsPageComponent/ProductsCategory'
+
 const ProductsPage = () => {
   return (
     <div>
-      
-<ProductsPageSlider />
-<ProductsCategory />
-    <Products />
-      
+     <ProductsPageSlider />
+      <ProductsCategory />
+      <AllProducts/>
     </div>
   )
 }

@@ -1,27 +1,23 @@
 .single-product-detail-main-div{
     width: 90%;
     height: 550px;
-    /* border: 2px solid green; */
     display: flex;
     margin:3rem auto;
-    
 }
 .image-div{
     width: 50%;
     height: 550px;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        background-image: url("../../images/image 42.png");
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url("../../images/image 42.png");
     
 }
 .detail-div {
     width: 50%;
     height: 550px;
-    /* border: 2px solid red; */
     padding: 0px 10px;
 }
 
@@ -32,32 +28,32 @@ td{
 
 td:first-child {
     font-family: Inter;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 td:nth-child(2){
     width: 500px;
     font-family: Inter;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 table button{
     margin: 0px 7px;
     background-color: #b8bfc7;
     font-family: Inter;
-        font-size: 15px;
-        font-weight: 400;
+    font-size: 15px;
+    font-weight: 400;
     padding:7px 30px;
     border: none;
-background-image: url("../../images/image 42.png");
-border-radius: 5px;
+    background-image: url("../../images/image 42.png");
+    border-radius: 5px;
         
 }
 table input{
@@ -70,13 +66,13 @@ table input{
 
 @media (max-width: 700px) {
     .single-product-detail-main-div{
-    
         flex-direction: column;
+        height: 850px;
         
     }
     .image-div {
         width: 100%;
-            height: 250px;
+        height: 250px;
     }
     .image-div img{
         transform: scale(0.5);
@@ -85,6 +81,5 @@ table input{
     .detail-div{
         width: 100%;
         height: 600px;
-        border :2px solid red;
     }
     }

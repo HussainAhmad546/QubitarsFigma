@@ -3,7 +3,7 @@ import '../../styles/AboutUs.css';
 
 const GetInfo = () => {
   return (
-    <div className="container text-center my-5">
+    <div className="container text-center my-5">  
       <h1>Get Info</h1>
       <p>
         If your business has an online store, learn how we can help you increase
@@ -55,6 +55,7 @@ const GetInfo = () => {
           <button
             type="submit"
             className="btn btn-primary inside-textarea-button"
+            style={{borderRadius:'30px', width:'150px'}}
           >
             Send Query
           </button>

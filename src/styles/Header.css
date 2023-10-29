@@ -17,19 +17,23 @@
     border-radius: 30px;
     padding: 3px 50px 3px 10px;
     border: 1px solid grey;
+    /* border-right: 1px solid #F7941D; */
+
   }
   .search-box {
     background-color: transparent;
     outline: none;
-    height: 34px;
+    height: 33px;
     font-size: 15px;
     border: 0;
     width: 100%;
+  
+    
   }
   .search-button {
     position: absolute;
-    right: 1px;
-    top: 0.3px;
+    right: 0.04px;
+    top: 0.1px;
     background-color:#F7941D;
     border: 0;
     color: #FFF;
@@ -37,6 +41,7 @@
     height: 40px;
     border-radius: 40px;
     cursor: pointer;
+    /* border-right: 3px solid #F7941D; */
 
   }
   

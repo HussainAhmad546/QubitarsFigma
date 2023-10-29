@@ -86,6 +86,21 @@
     background-color: #F5F5F5;
   }
 
+  .qoute-container{
+    width: 700px;
+    background: #F5F5F5;
+    margin-top: -80px;
+    border-radius: 5px;
+  }
+
+@media (max-width: 768px) {
+  .qoute-container {
+    width: 90%; /* Adjust the width as needed for smaller screens */
+    margin-top: 0; /* Remove the margin for smaller screens */
+    padding: 20px; /* Add padding for smaller screens if needed */
+  }
+}
+
   @media (max-width: 768px) {
     .contact-us-container {
       flex-direction: column; /* Stack items vertically in mobile view */

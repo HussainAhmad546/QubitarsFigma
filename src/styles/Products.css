@@ -41,6 +41,13 @@
     color:orange;
   }
 
+  .see-all{
+    color: #F7941D;
+  }
+
+  .see-all:hover{
+    cursor: pointer;
+  }
   
   .products-list ul {
     display: flex;
@@ -144,5 +151,22 @@
       padding: 10px;
       margin-bottom: 10px;
     }
+  }
+
+  .list-styling{
+    justify-content:space-around;
+
+  }
+
+  .list-styling li{
+    list-style-type: none;
+    margin-left: 30px;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+
+  .list-styling li:hover{
+    color: #F7941D;
   }
   

@@ -5,7 +5,7 @@ import pic1 from "../../images/image 43.png"
 const SingleProductsData = () => {
   return (
     <div className='single-product-detail-main-div'>
-    <div className='image-div'><img src={pic1} /></div>
+    <div className='single-product-image'><img src={pic1} /></div>
           <div className='detail-div'>
           <h1>Iphone Apple 13 pro Max</h1>
           <h2>Rating</h2>
@@ -49,7 +49,7 @@ const SingleProductsData = () => {
                       </td>
                   </tr>
 
-                  <button className='order-btn' >Buy Now</button>
+                  <button className='order-btn'>Buy Now</button>
               </table>
           </div>
       

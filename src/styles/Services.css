@@ -25,6 +25,10 @@
   .service-image{
     margin-left: 80px;
   }
+
+  .card-body{
+    background-color:#F5F5F5
+  }
   
   /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
@@ -40,11 +44,60 @@
   }
 }
   
+.feature-icon {
+  color: black;
+  background: white; 
+  border-radius: 50%; 
+  box-shadow: 5px 5px 5px solid black;
+  width: 200px;
+}
+.card-body:hover{
+  border-bottom: 2px solid #F7941D;
+}
+.certified-company{
+  border-bottom:2px solid #F7941D;
+}
+.certified-company:hover{
+  border-bottom:none !important;
+}
   
 .service-card {
   box-shadow: 2px 2px 5px 0 rgba(255, 165, 0, 0.5);
   position: relative;
 }
+
+.service-card:hover{
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0);
+}
+
+.service-card-1:hover{
+  box-shadow: 2px 2px 5px 0 rgba(255, 165, 0, 0.5);
+}
+
+.service-card-1:hover::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #F7941D;
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.service-card:hover::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: rgba(247, 148, 29, 0.15);
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
 
 .service-card::before {
   content: '';
@@ -53,10 +106,11 @@
   right: 0;
   width: 30px;
   height: 30px;
-  background: orange;
+  background: #F7941D;
   border-top-right-radius: 100%;
   transform: rotate(180deg);
 }
+
 
 .service-card-1::before {
   content: '';
@@ -83,7 +137,7 @@
 /* OurPricing.css */
 .pricing-card {
   width: 100%;
-  background: orange;
+  background: #F7941D;
   color: white;
 }
 
@@ -102,12 +156,16 @@
 }
 
 .Plan-title-1, .Plan-title-3{
-  background-color: orange;
+  background-color: #F7941D;
   color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 .Plan-title-2{
-  background-color: blue;
+  background-color: #0F75BC;
   color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .list-unstyled {
@@ -120,7 +178,7 @@
 }
 
 .starting-plan-button{
-  background-color: orange;
+  background-color: #F7941D;
   color: white;
   padding: 8px;
   border: none;
@@ -128,13 +186,13 @@
 }
 .gold-plan-button{
   background-color: rgba(255, 255, 255, 1);
-  color: orange;
+  color: #F7941D;
   padding: 8px;
   border: none;
   border-radius: 5px;
 }
 .gold-plan-button:hover{
-  background-color:orange;
+  background-color:#F7941D;
   color: white;
   padding: 8px;
   border: none;
@@ -161,8 +219,8 @@
 }
 .service-button {
   position: absolute;
-  right: 1px;
-  top: 0.2px;
+  right: 0.1px;
+  top: 0.1px;
   background-color:#0F75BC;
   border: 0;
   color: #FFF;
@@ -179,5 +237,5 @@
 
 
 .orange-text {
-  color: orange;
+  color: #F7941D;
 }

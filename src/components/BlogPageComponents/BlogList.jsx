@@ -1,5 +1,5 @@
 import React from 'react';
-import blogData from '../data/blogdata';
+import blogData from '../../data/blogdata';
 import BlogCard from './BlogCards';
 
 const BlogList = () => {

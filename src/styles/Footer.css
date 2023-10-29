@@ -30,6 +30,7 @@
   border-radius: 30px;
   padding: 3px 50px 3px 10px;
   border: 1px solid grey;
+  
 }
 .Footer-Subsribe-box {
   background-color: transparent;
@@ -41,8 +42,8 @@
 }
 .Footer-button {
   position: absolute;
-  right: 1px;
-  top: 0.2px;
+  right: 0.001px;
+  top:0.1px;
   background-color:#F7941D;
   border: 0;
   color: #FFF;

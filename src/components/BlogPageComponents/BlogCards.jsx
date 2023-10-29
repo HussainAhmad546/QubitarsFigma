@@ -1,9 +1,13 @@
 import React from 'react';
 import { FaUser } from 'react-icons/fa';
-import '../styles/Blogs.css'
+import '../../styles/Blogs.css'
 import { Link } from 'react-router-dom';
 
 const BlogCard = ({ blog }) => {
+  const handleContinueReadingClick = () => {
+    // Scroll to the top of the page when "Continue Reading" is clicked
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="col-md-4">
       <div className="card mb-3 blog-card">
@@ -14,7 +18,7 @@ const BlogCard = ({ blog }) => {
           <p className="card-details">
             <FaUser className="person-icon" /> {blog.author} <span className="separator">|</span> {blog.date}
           </p>
-          <Link to={`/blog/${blog.id}`} className="btn btn-block">
+          <Link to={`/blog/${blog.id}`} className="btn btn-block" onClick={handleContinueReadingClick}>
             Continue Reading
           </Link>
         </div>

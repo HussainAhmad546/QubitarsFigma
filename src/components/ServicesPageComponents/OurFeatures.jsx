@@ -1,6 +1,7 @@
 import React from 'react';
-import Feature1 from '../../images/Feature1.png'
 import {LiaAwardSolid} from 'react-icons/lia'
+import {TfiHeadphoneAlt, TfiMedall} from 'react-icons/tfi'
+import {RiTeamFill} from 'react-icons/ri'
 
 const OurFeatures = () => {
   return (
@@ -11,7 +12,7 @@ const OurFeatures = () => {
         <div className="col-md-4">
           <div className="card mb-4 feature-card">
             <div className="card-body d-flex">
-              <LiaAwardSolid className="feature-icon" size={50} color="blue" />
+              <LiaAwardSolid className="feature-icon" size={80} color="black" />
               <div className="text-right ml-2">
                 <h5 className="card-title">Proper Planning</h5>
                 <p className="card-text">
@@ -23,8 +24,8 @@ const OurFeatures = () => {
         </div>
         <div className="col-md-4">
           <div className="card mb-4 feature-card">
-            <div className="card-body d-flex">
-              <img src={Feature1} alt="" className="feature-icon" />
+            <div className="card-body d-flex certified-company">
+            <LiaAwardSolid className="feature-icon" size={80} color="black" />
               <div className="text-right ml-2">
                 <h5 className="card-title">Certified Company</h5>
                 <p className="card-text">
@@ -37,7 +38,7 @@ const OurFeatures = () => {
         <div className="col-md-4">
           <div className="card mb-4 feature-card">
             <div className="card-body d-flex">
-              <img src={Feature1} alt="" className="feature-icon" />
+            <LiaAwardSolid className="feature-icon" size={80} color="black" />
               <div className="text-right ml-2">
                 <h5 className="card-title">Creative Strategy</h5>
                 <p className="card-text">
@@ -50,7 +51,7 @@ const OurFeatures = () => {
         <div className="col-md-4">
           <div className="card mb-4 feature-card">
             <div className="card-body d-flex">
-              <img src={Feature1} alt="" className="feature-icon" />
+            <TfiMedall className="feature-icon" size={60} color="black" />
               <div className="text-right ml-2">
                 <h5 className="card-title">Awarded Company</h5>
                 <p className="card-text">
@@ -63,7 +64,7 @@ const OurFeatures = () => {
         <div className="col-md-4">
           <div className="card mb-4 feature-card">
             <div className="card-body d-flex">
-              <img src={Feature1} alt="" className="feature-icon" />
+            <RiTeamFill className="feature-icon" size={60} color="black" />
               <div className="text-right ml-2">
                 <h5 className="card-title">Expert Team</h5>
                 <p className="card-text">
@@ -76,7 +77,7 @@ const OurFeatures = () => {
         <div className="col-md-4">
           <div className="card mb-4 feature-card">
             <div className="card-body d-flex">
-              <img src={Feature1} alt="" className="feature-icon" />
+            <TfiHeadphoneAlt className="feature-icon" size={60} color="black" />
               <div className="text-right ml-2">
                 <h5 className="card-title">24/7 Support</h5>
                 <p className="card-text">

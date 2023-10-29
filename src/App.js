@@ -13,8 +13,6 @@ import SingleProductPage from './screens/SingleProductPage';
 import QoutePage from './screens/QoutePage';
 import BlogDetail from './screens/BlogDetailPage';
 
-
-
 const App = () => {
   return (
     

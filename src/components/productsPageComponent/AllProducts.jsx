@@ -5,6 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
   const navigate = useNavigate();
+  const handleBuyNowClick = () => {
+    window.scrollTo(0, 0);
+    navigate("/Singleproduct");
+  };
 
   return (
     <div className='products-container all-products-container'>
@@ -17,7 +21,7 @@ const Products = () => {
             <h3 style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold' }}>{product.name}</h3>
             <p>{product.description}</p>
             <span className="price">{product.price}</span>
-            <button className="buy-button" onClick={() => navigate("/Singleproduct")}>Buy Now</button>
+            <button className="buy-button" onClick={handleBuyNowClick} >Buy Now</button>
           </div>
         ))}
       </div>

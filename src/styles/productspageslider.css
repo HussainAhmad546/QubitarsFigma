@@ -10,7 +10,6 @@
 .pic-wrapper{
     width: 50%;
     height: 500px;
-    /* border: 2px solid green; */
     background-image: url("../images/mulitplesIphones.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +20,6 @@
 .text-div{
     width: 50%;
         height: auto;
-        /* border: 2px solid green; */
         padding: 3rem 0rem 0rem 3rem;
 }
 .text-div h4{
@@ -63,4 +61,44 @@
     line-height: 22px;
     letter-spacing: 0em;
     
+}
+
+
+/* Media query for screens with a max-width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .productsPage-slider-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center content */
+    }
+
+    .pic-wrapper {
+        width: 100%; /* Full width for smaller screens */
+        height: 300px; /* Adjust height as needed */
+    }
+
+    .text-div {
+        width: 100%; /* Full width for smaller screens */
+        padding: 1rem; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
+
+    .text-div h4 {
+        font-size: 20px; /* Adjust font size */
+        line-height: 24px; /* Adjust line height */
+    }
+
+    .text-div h1 {
+        font-size: 40px; /* Adjust font size */
+        line-height: 50px; /* Adjust line height */
+    }
+
+    .text-div h6 {
+        font-size: 14px; /* Adjust font size */
+        line-height: 18px; /* Adjust line height */
+    }
+
+    .text-div button {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 1rem; /* Adjust margin */
+    }
 }

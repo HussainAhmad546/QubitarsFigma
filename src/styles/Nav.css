@@ -44,6 +44,8 @@ body{
     width: 30%;
     margin-top: 10px;
   }
+
+
   .nav-list ul{
     display: flex;
     justify-content: flex-end;
@@ -106,7 +108,7 @@ body{
 
   .nav-wrapper {
     flex-direction: column;
-    align-items: center; /* Center items in the wrapper */
+    align-items: center;
     height: auto;
     padding: 20px;
     width: 100%;
@@ -121,21 +123,65 @@ body{
   }
 
   .quote-button {
-    /* width: 40%; */
+
     margin: auto;
   }
 
   .nav-list ul {
     display: flex;
-    justify-content: center; /* Center list items horizontally */
+    justify-content: center; 
   }
 
   .nav-list ul li {
     border-left: none;
     padding-left: 0;
-    margin-left: 20px;
+    margin-left: 5px;
   }
 }
 
 
 
+.modal-content {
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  padding: 5px;
+  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px !important;
+  margin: 0 auto;
+  position: absolute!important ;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  border-radius: 10px !important;
+  
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.modal-content ul li {
+  margin: 8px 0;
+  position: relative;
+  color: #000;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.arrow-icon {
+  float: right; /* Position the arrow to the right */
+  margin-left: 5px; /* Add some space between text and the arrow */
+}
+
+.modal-content ul li:hover {
+  color: #FFA500;
+}
+
+ @media (min-width: 768px) {
+  .modal-content {
+    left: 12% ;
+  }
+} 

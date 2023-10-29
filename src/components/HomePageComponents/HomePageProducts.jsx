@@ -1,22 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/Products.css';
 import productData from '../../data/productsData';
 import { useNavigate } from 'react-router-dom';
+import { IoIosArrowRoundForward } from 'react-icons/io';
+import { category } from '../../data/categoryPic';
 
 const Products = () => {
   const navigate = useNavigate();
-
-  // Get the first 8 products
+  const handleSeeAllClick = () => {
+    window.scrollTo(0, 0);
+    navigate("/products");
+  };
   const first8Products = productData.slice(0, 8);
+  const first4Products = category.slice(0, 8);
+
+  const [selectedCategory, setSelectedCategory] = useState('New Arrival');
+
+  const categoryData = {
+    'New Arrival': first8Products,
+    'Featured': first4Products,
+    'Top Selling': first8Products,
+  };
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
 
   return (
     <div className='products-container'>
-      <h1>Accessories</h1>
+      <div className="list-items">
+        <ul className='d-flex list-styling'>
+          <li onClick={() => handleCategoryClick('New Arrival')}>New Arrival</li>
+          <li onClick={() => handleCategoryClick('Featured')}>Featured</li>
+          <li onClick={() => handleCategoryClick('Top Selling')}>Top Selling</li>
+          <li onClick={() => handleSeeAllClick()} className='see-all'>See all<IoIosArrowRoundForward/></li>
+        </ul>
+      </div>
       <hr className='products-hr' />
       <div className="products">
-        {first8Products.map((product) => (
+        {categoryData[selectedCategory].map((product) => (
           <div key={product.id} className="product-item">
-            <img src={product.pic} alt='dull' height={130} width={40} className='image-gallery' />
+            <img src={product.pic} alt='dull' height={130} width={40} className='image-gallery'/>
             <h3 style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold' }}>{product.name}</h3>
             <p>{product.description}</p>
             <span className="price">{product.price}</span>
@@ -29,3 +53,4 @@ const Products = () => {
 }
 
 export default Products;
+

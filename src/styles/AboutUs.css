@@ -1,3 +1,41 @@
+ .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .play-button img {
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+  }
+  
+  .circle-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  
+  
+
+
+
+
+
+
+
 .about-main{
     background-image: url(../images/AboutPic.png);
 }
@@ -55,6 +93,40 @@ font-family: Inter;
     color: white;
 }
 
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+    .about-main {
+      padding: 5rem 0;
+      height: auto;
+    }
+  
+    .about-content {
+      width: 100%;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  
+    .about-content span {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .about-content h1 {
+      font-size: 50px;
+      line-height: 45px;
+    }
+  
+    .about-content p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .about-content button {
+      width: 50%;
+      height: 50px;
+    }
+  }
+
 
 .how-we-work-main{
     width: 100%;
@@ -83,7 +155,7 @@ font-family: Inter;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: center;
-    width: 618px;
+    width: 400px;
     color:white;
 }
 
@@ -94,7 +166,7 @@ font-family: Inter;
     }
   
     .how-we-work-main p {
-      font-size: 14px;
+      font-size: 10px;
       line-height: 18px;
     }
   
@@ -178,39 +250,146 @@ font-family: Inter;
 .right-div .right-div-box .image-content h5{
 margin-top:-1rem;
 }
-
-
-
-  /* get info */
-  /* AboutUs.css */
-
 .red-asterisk {
     color: red;
   }
   
-  /* Style for the Send Query button */
+  
   .inside-input-button {
-    border-radius: 5px; /* Adjust the border radius as needed */
+    border-radius: 5px; 
   }
   
-  /* Increase the height of the textarea input */
+  
   .textarea {
-    height: 150px; /* Adjust the height as needed */
-    resize: none; /* Prevent textarea from being resizable */
+    height: 150px; 
+    resize: none; 
   }
   
-  /* Style for the Send Query button inside the textarea */
+
   .inside-textarea-button {
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove button border */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px; /* Adjust the border radius as needed */
+    background-color: #007bff;
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
     position: absolute;
     right: 10px;
     bottom: 10px;
   }
+
+  .trusted-paertners-header{
+    margin-top: 20px !important;
+    border: 1px solid transparent;
+  }
   
   
+  /* slider.css */
+.carousel-container {
+  display: flex;
+  /* overflow: hidden; */
+  width: 1200px;
+  position: relative;
+  margin:5rem auto;
   
-  
+;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-div {
+  flex: 0 0 calc(50% - 20px);
+  width: 578px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  z-index: -1;
+
+}
+
+.carousel-button {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 44%;
+  right: -2px;
+  z-index: 10;
+  background: none;
+  border: none;
+  background-color: orange;
+  font-size: 35px;
+      font-weight: bold;
+}
+
+.carousel-button-1 {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 44%;
+  left: -20px;
+  z-index: 10;
+  background: none;
+  border: none;
+  background-color: orange;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.content-div {
+  width: 80%;
+  height: auto;
+  margin-top: 20rem;
+  position: absolute;
+  z-index: 3;
+  background-color:white;
+  border-bottom: 3px solid orange;
+
+}
+
+
+@media (max-width: 768px) {
+  .carousel-container {
+    margin: 3rem auto;
+    width: 450px;
+    margin: auto;
+  }
+
+
+  .carousel-div {
+    margin-right: 0;
+    width: 400px;
+    flex: 0 0 calc(100% - 1px);
+    margin: auto;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-div:nth-child(2) {
+    display: none;
+  }
+
+  .carousel-button,
+  .carousel-button-1 {
+    top: 50%;
+  }
+
+  .content-div {
+    height: 200px; 
+  }
+
+  .content-div p, .content-div h1 {
+    font-size: 16px;
+  }
+}
+
+
+
+

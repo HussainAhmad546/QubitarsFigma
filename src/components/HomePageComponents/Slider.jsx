@@ -9,11 +9,11 @@ const Slider = () => {
       <p className='slider-text'>We Picked Every Item <span>With Care,</span><span style={{color:'orange'}}>You Must Try</span>At least Once.</p>
       <button className='collection-button'>Go to Collection <FaArrowRight/></button>
         </div>
-        <div class="slider-buttons">
+      <div class="slider-buttons">
         <div class="ellipse-button"></div>
         <div class="ellipse-button orange-button"></div>
         <div class="ellipse-button"></div>
-    </div>
+      </div>
     </div>
   )
 }

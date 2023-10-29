@@ -14,33 +14,43 @@ const QuotePage = () => {
           </p>
         </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <div className="qoute-container">
-          <div className="contact-us-right">
+      <div className="d-flex justify-content-center qoute-container" style={{width:'800px'}}>
+        <div className="qoute-container container">
+          <div className="contact-us-right" style={{ width:'100%'}}>
             <div className="custom-input-group">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your Email" />
+              <input type="text" placeholder="Your Name" style={{backgroundColor:'white'}}/>
+              <input type="email" placeholder="Your Email" style={{backgroundColor:'white'}} />
             </div>
             <div className="custom-input-group">
-              <input type="tel" placeholder="Your Phone Number" />
-              <input type="text" placeholder="Subject" />
+              <input type="tel" placeholder="Your Phone Number"style={{backgroundColor:'white'}} />
+              <select name="select" id="" placeholder='select' style={{width:'48%', border:'none'}}>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Transgender</option>
+              </select>
             </div>
-            <textarea rows="5" placeholder="Your Message"></textarea>
+            <textarea rows="5" placeholder="Your Message" style={{backgroundColor:'white'}}></textarea>
             <button className="submit-button">Submit</button>
           </div>
-          <div className="contact-us-left">
+          <div className="contact-us-left" style={{display:'flex', width:'100%',justifyContent:'space-between'}}>
+            <div>
             <h2 className="contact-us-heading">Address:</h2>
             <p className="paragrapgh">
               4035 Heavens,
               <br />
               Los Angeles, California
             </p>
+            </div>
+            <div>
             <h2 className="contact-us-heading">Phone Number:</h2>
             <p className="paragrapgh">+000 313 577 111</p>
             <p className="paragrapgh">+000 313 577 222</p>
+            </div>
+            <div>
             <h2 className="contact-us-heading">Email:</h2>
             <p className="paragrapgh">info@example.com</p>
             <p className="paragrapgh">support@example.com</p>
+            </div>
           </div>
         </div>
       </div>

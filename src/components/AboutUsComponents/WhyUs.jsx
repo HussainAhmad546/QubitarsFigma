@@ -27,7 +27,7 @@ const WhyUs = () => {
 
 
   return (
-    <div className='container mt-5'>
+    <div className='container mt-5' style={{marginRight:'0px', marginLeft:'0px',margin:'auto'}}>
           <div className="row">
               <div className="col-md-7  left-div">
               

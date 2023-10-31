@@ -39,7 +39,7 @@ const ContactPage = () => {
           <button className="submit-button">Send Messege</button>
         </div>
       </div>
-        <img src={mapImage} alt="mapimage" className='mapImage' />
+        <img src={mapImage} alt="mapimage" className='mapImage mb-4' />
     </>
   );
 };

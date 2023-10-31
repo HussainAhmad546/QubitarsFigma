@@ -154,7 +154,9 @@
   }
 
   .list-styling{
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
   }
 

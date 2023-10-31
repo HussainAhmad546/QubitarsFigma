@@ -7,7 +7,7 @@ import SaleJug from '../../images/Sale Jug.png';
 
 const SalesCard = () => {
   return (
-    <div className="container my-5">
+    <div className=" my-5 custom-container-sales-card">
       <div className="row">
         <div className="col-lg-8 col-md-12">
           <div className="row">

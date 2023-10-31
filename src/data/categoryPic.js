@@ -29,5 +29,14 @@ export  const category=[
       {
           pic: pic6,
           name: "BAGS"
-      }
+      },
+      {
+        pic: pic5,
+        name: "SHOES"
+    },
+
+    {
+        pic: pic6,
+        name: "BAGS"
+    }
 ]

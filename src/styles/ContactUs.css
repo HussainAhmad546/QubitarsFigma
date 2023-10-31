@@ -81,7 +81,7 @@
   }
   
   .custom-input-group input {
-    width: 48%; /* Adjust the width as needed for spacing between inputs */
+    width: 48%;
     /* Add other styles as needed */
     background-color: #F5F5F5;
   }
@@ -113,3 +113,18 @@
       margin: 10px 0; /* Add some margin between the columns */
     }
   }
+
+  /* Adjust styles for screens smaller than 768px (e.g., mobile) */
+@media (max-width: 768px) {
+  .contact-us-right {
+    width: 100%;
+    display: block;
+  }
+
+  .custom-input-group input,
+  .custom-input-group select {
+    width: 48%;
+    display: block; 
+  }
+
+}

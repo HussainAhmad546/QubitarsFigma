@@ -1,13 +1,45 @@
+// import React from 'react';
+// import '../../styles/Products.css';
+// import productData from '../../data/productsData';
+// import { useNavigate } from 'react-router-dom';
+
+// const Products = (productId) => {
+//   const navigate = useNavigate();
+//   const handleBuyNowClick = () => {
+//     window.scrollTo(0, 0);
+//     navigate(`/product/${productId}`);
+//   };
+
+//   return (
+//     <div className='products-container all-products-container'>
+//       <h1>Accessories</h1>
+//       <hr className='products-hr' />
+//       <div className="products">
+//         {productData.map((product) => (
+//           <div key={product.id} className="product-item">
+//             <img src={product.pic} alt='dull' height={130} width={40} className='image-gallery' />
+//             <h3 style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold' }}>{product.name}</h3>
+//             <p>{product.description}</p>
+//             <span className="price">{product.price}</span>
+//             <button className="buy-button" onClick={handleBuyNowClick} >Buy Now</button>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Products;
 import React from 'react';
-import '../../styles/Products.css';
-import productData from '../../data/productsData';
 import { useNavigate } from 'react-router-dom';
+import productData from '../../data/productsData';
 
 const Products = () => {
   const navigate = useNavigate();
-  const handleBuyNowClick = () => {
+
+  const handleBuyNowClick = (productId) => {
     window.scrollTo(0, 0);
-    navigate("/Singleproduct");
+    navigate(`/product/${productId}`);
   };
 
   return (
@@ -17,11 +49,11 @@ const Products = () => {
       <div className="products">
         {productData.map((product) => (
           <div key={product.id} className="product-item">
-            <img src={product.pic} alt='dull' height={130} width={40} className='image-gallery' />
+            <img src={product.pic} alt={product.name} height={130} width={40} className='image-gallery' />
             <h3 style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold' }}>{product.name}</h3>
             <p>{product.description}</p>
             <span className="price">{product.price}</span>
-            <button className="buy-button" onClick={handleBuyNowClick} >Buy Now</button>
+            <button className="buy-button" onClick={() => handleBuyNowClick(product.id)}>Buy Now</button>
           </div>
         ))}
       </div>

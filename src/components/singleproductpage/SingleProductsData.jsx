@@ -1,35 +1,44 @@
-import React from 'react'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import productData from '../../data/productsData';
 import "../../styles/singleProduct/singleproduct.css"
-import pic1 from "../../images/image 43.png"
+import DescriptionSection from './DescriptionSection'
+import SingleProductFooter from './SingleProductFooter';
 
-const SingleProductsData = () => {
+const SingleProduct = () => {
+  let { productId } = useParams();
+  const product = productData.find((p) => p.id.toString() === productId);
+  if (!product) {
+    return <div>Product not found</div>;
+  }
   return (
+    <>
     <div className='single-product-detail-main-div'>
-    <div className='single-product-image'><img src={pic1} /></div>
+    <div className='single-product-image'><img src={product.pic} /></div>
           <div className='detail-div'>
-          <h1>Iphone Apple 13 pro Max</h1>
+          <h1>{product.name}</h1>
           <h2>Rating</h2>
           <hr></hr>
               <table >
                   <tr>
                       <td>Model:</td>
-                      <td>13 Pro Max</td>
+                      <td>{product.name}</td>
                   </tr>
                   <tr>
                       <td>description:</td>
-                      <td>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es</td>
+                      <td>{product.description}</td>
                   </tr>
                   <tr>
                       <td>Brand:</td>
-                      <td>Apple Original</td>
+                      <td>{product.name}</td>
                   </tr>
                   <tr>
                       <td>Type:</td>
-                      <td>Accessories/Phone</td>
+                      <td>{product.type}</td>
                   </tr>
                   <tr>
                       <td>Availabilty:</td>
-                      <td>InStock</td>
+                      <td>{product.availability}</td>
                   </tr>
                   <tr>
                       <td>Size:</td>
@@ -52,9 +61,11 @@ const SingleProductsData = () => {
                   <button className='order-btn'>Buy Now</button>
               </table>
           </div>
-      
     </div>
+      <DescriptionSection/>
+      <SingleProductFooter/>
+      </>
   )
-}
+};
 
-export default SingleProductsData
+export default SingleProduct;

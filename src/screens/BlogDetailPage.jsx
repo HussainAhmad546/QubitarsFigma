@@ -5,6 +5,7 @@ import '../styles/Blogs.css';
 import { FaUser } from 'react-icons/fa';
 import calendor from '../images/Calendor.png';
 import { BiSearch } from 'react-icons/bi';
+import { FaSearch } from 'react-icons/fa';
 import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { IconContext } from 'react-icons'; 
 
@@ -79,9 +80,9 @@ const BlogDetail = () => {
         </div>
         <div className="col-md-4">
           <div className="right-side-widgets">
-            <div className="widget search-widget">
-              <input type="text" placeholder="Search" />
-              <span className="search-icon"><BiSearch/></span>
+            <div class="blog-search-container mb-4">
+              <input type="text" class="blog-search-box" placeholder="Search Post.."/>
+              <button class="blog-search-button"><FaSearch/></button>
             </div>
             <div className="widget popular-posts-widget">
               <h3 className="widget-heading">Popular Posts</h3>

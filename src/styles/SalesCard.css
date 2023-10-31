@@ -1,3 +1,7 @@
+.custom-container-sales-card{
+    width: 90% !important;
+    margin: auto !important;
+}
 .lower-left{
     width: 99%;
     height: 180px;
@@ -16,4 +20,3 @@
     background-size: 420px 400px;
     cursor: pointer;
 }
-

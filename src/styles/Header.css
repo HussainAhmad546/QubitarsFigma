@@ -17,8 +17,6 @@
     border-radius: 30px;
     padding: 3px 50px 3px 10px;
     border: 1px solid grey;
-    /* border-right: 1px solid #F7941D; */
-
   }
   .search-box {
     background-color: transparent;
@@ -27,8 +25,6 @@
     font-size: 15px;
     border: 0;
     width: 100%;
-  
-    
   }
   .search-button {
     position: absolute;
@@ -41,11 +37,42 @@
     height: 40px;
     border-radius: 40px;
     cursor: pointer;
-    /* border-right: 3px solid #F7941D; */
-
   }
   
   .search-button:focus {
+    outline: none;
+  }
+
+
+  .blog-search-container {
+    background-color: #FFF;
+    position: relative;
+    border-radius: 5px;
+    padding: 3px 50px 3px 10px;
+    border: 1px solid orange;
+  }
+  .blog-search-box {
+    background-color: transparent;
+    outline: none;
+    height: 33px;
+    font-size: 15px;
+    border: 0;
+    width: 100%;
+  }
+  .blog-search-button {
+    position: absolute;
+    right: 0.04px;
+    top: 0.2px;
+    background-color:#F7941D;
+    border: 0;
+    color: #FFF;
+    width: 50px;
+    height: 39px;
+    /* border-radius: 40px; */
+    cursor: pointer;
+  }
+  
+  .blog-search-button:focus {
     outline: none;
   }
 /* Responsive adjustments for smaller screens */

@@ -30,9 +30,11 @@ const Products = () => {
     <div className='products-container'>
       <div className="list-items">
         <ul className='d-flex list-styling'>
+          <div className='text-left d-flex'>
           <li onClick={() => handleCategoryClick('New Arrival')}>New Arrival</li>
           <li onClick={() => handleCategoryClick('Featured')}>Featured</li>
           <li onClick={() => handleCategoryClick('Top Selling')}>Top Selling</li>
+          </div>
           <li onClick={() => handleSeeAllClick()} className='see-all'>See all<IoIosArrowRoundForward/></li>
         </ul>
       </div>

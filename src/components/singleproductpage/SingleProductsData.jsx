@@ -1,20 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import productData from '../../data/productsData';
 import "../../styles/singleProduct/singleproduct.css"
 import DescriptionSection from './DescriptionSection'
 import SingleProductFooter from './SingleProductFooter';
+import FeaturedCategories from './FeaturedCategories'
 
 const SingleProduct = () => {
-  let { productId } = useParams();
-  const product = productData.find((p) => p.id.toString() === productId);
-  if (!product) {
+    const [selectedColor, setSelectedColor] = useState('#FF0000');
+    const [selectedSize, setSelectedSize] = useState('medium');
+    let { productId } = useParams();
+    const product = productData.find((p) => p.id.toString() === productId);
+    if (!product) {
     return <div>Product not found</div>;
-  }
+    }
+
+    const handleColorChange = (color) => {
+      setSelectedColor(color);
+    }
+
+    const handleSizeChange = (size) => {
+        setSelectedSize(size);
+      }
+
+  const colorImages = {
+    '#FF0000': product.pic,
+    '#D3D3D3': product.pic2,
+    '#000000': product.pic3,
+  };
+
+    const imageSizeHeight = {
+        small: '150px',
+        medium: '200px',
+        large: '350px',
+      };
   return (
     <>
     <div className='single-product-detail-main-div'>
-    <div className='single-product-image'><img src={product.pic} /></div>
+    <div className='single-product-image'>
+        <img src={colorImages[selectedColor] ? colorImages[selectedColor] : product.pic} style={{ height: imageSizeHeight[selectedSize] }} />
+        </div>
           <div className='detail-div'>
           <h1>{product.name}</h1>
           <h2>Rating</h2>
@@ -43,26 +68,26 @@ const SingleProduct = () => {
                   <tr>
                       <td>Size:</td>
                       <td>
-                      <button>Small</button>
-                          <button>Medium</button>
-                          <button>Large</button>
-                      
-                      </td>
+                        <button className={`size-button ${selectedSize === 'small' ? 'selected' : ''}`} onClick={() => handleSizeChange('small')}>Small</button>
+                        <button className={`size-button ${selectedSize === 'medium' ? 'selected' : ''}`} onClick={() => handleSizeChange('medium')}>Medium</button>
+                        <button className={`size-button ${selectedSize === 'large' ? 'selected' : ''}`} onClick={() => handleSizeChange('large')}>Large</button>
+                    </td>
                   </tr>
                   <tr>
                       <td>Color</td>
-                      <td>
-                          <input type='color' value='#FF0000' disabled></input>
-                          <input type='color' value='#D3D3D3' disabled></input>
-                          <input type='color' disabled></input>
-                      </td>
+                     <td>
+                <button className='color-button' style={{ backgroundColor: '#FF0000' }} onClick={() => handleColorChange('#FF0000')}></button>
+                <button className='color-button' style={{ backgroundColor: '#D3D3D3' }} onClick={() => handleColorChange('#D3D3D3')}></button>
+                <button className='color-button' style={{ backgroundColor: '#000000' }} onClick={() => handleColorChange('#000000')}></button>
+              </td>
                   </tr>
 
-                  <button className='order-btn'>Buy Now</button>
               </table>
+                  <button className='order-btn'>Buy Now</button>
           </div>
     </div>
       <DescriptionSection/>
+      <FeaturedCategories/>
       <SingleProductFooter/>
       </>
   )

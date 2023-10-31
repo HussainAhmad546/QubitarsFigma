@@ -2,24 +2,15 @@ import React, { useState } from 'react';
 import '../../styles/Products.css';
 import productData from '../../data/productsData';
 import { useNavigate } from 'react-router-dom';
-import { IoIosArrowRoundForward } from 'react-icons/io';
-import { category } from '../../data/categoryPic';
 
 const Products = () => {
   const navigate = useNavigate();
-  const handleSeeAllClick = () => {
-    window.scrollTo(0, 0);
-    navigate("/products");
-  };
-  const first8Products = productData.slice(0, 8);
-  const first4Products = category.slice(0, 8);
+  const first8Products = productData.slice(0, 4);
 
-  const [selectedCategory, setSelectedCategory] = useState('New Arrival');
+  const [selectedCategory, setSelectedCategory] = useState('Featured');
 
   const categoryData = {
-    'New Arrival': first8Products,
-    'Featured': first4Products,
-    'Top Selling': first8Products,
+    'Featured': first8Products,
   };
 
   const handleCategoryClick = (category) => {
@@ -31,15 +22,12 @@ const Products = () => {
   };
 
   return (
-    <div className='products-container'>
+    <div className='featured-product-container' style={{height:'500px'}}>
       <div className="list-items">
         <ul className='d-flex list-styling'>
           <div className='text-left d-flex'>
-          <li onClick={() => handleCategoryClick('New Arrival')}>New Arrival</li>
           <li onClick={() => handleCategoryClick('Featured')}>Featured</li>
-          <li onClick={() => handleCategoryClick('Top Selling')}>Top Selling</li>
           </div>
-          <li onClick={() => handleSeeAllClick()} className='see-all'>See all<IoIosArrowRoundForward/></li>
         </ul>
       </div>
       <hr className='products-hr' />

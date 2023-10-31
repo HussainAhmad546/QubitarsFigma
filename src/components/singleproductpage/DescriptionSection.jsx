@@ -34,7 +34,7 @@ const Products = () => {
         </ul>
       </div>
       <hr className='products-hr'style={{marginBottom:'0px'}} />
-      <div className="products" style={{border:'1px solid lightgrey'}}>
+      <div className="products" style={{border:'1px solid lightgrey',padding:'15px'}}>
         {/* {categoryData[selectedCategory].map((product, index) => (
           <div key={index}>
             <p>{product}</p>

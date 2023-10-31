@@ -26,7 +26,7 @@ const blogData = [
   {
     id: 3,
     image: BlogImage,
-    title: 'The Art of Software Development',
+    title: 'The Art of Software Development Program',
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt',
     paragraphDetails: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt',
     author: 'Author 3',

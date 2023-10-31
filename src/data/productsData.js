@@ -2,6 +2,8 @@ import toolkit from '../images/Toolkit.png'
 import pad from '../images/Apple Series 8.jpg'
 import pods from '../images/pods.jpg'
 import watch from '../images/watch.png'
+import greywatch from '../images/grey watch.jpeg'
+import blackwatch from '../images/black watch.jpeg'
 
 
 
@@ -10,6 +12,8 @@ const productData = [
       id: 1,
       name: 'Apple Series 8 G3546',
       pic:watch,
+      pic2:greywatch,
+      pic3:blackwatch,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       longdescription:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       price: '$10.99',
@@ -20,6 +24,8 @@ const productData = [
       id: 2,
       name: 'Ipad',
       pic:pad,
+      pic2:pods,
+      pic3:toolkit,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       longdescription:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       price: '$19.99',

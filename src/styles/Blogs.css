@@ -53,8 +53,16 @@
   font-weight: bold;
 }
 
+.icon-container {
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
 
-
+.blog-button{
+  background-color: white;
+  color: grey;
+  border: none;
+  padding: 5px;
+}
 /* BlogDetail.css */
 
 .custom-container{

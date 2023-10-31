@@ -4,10 +4,10 @@ import blogData from '../data/blogdata';
 import '../styles/Blogs.css';
 import { FaUser } from 'react-icons/fa';
 import calendor from '../images/Calendor.png';
-import { BiSearch } from 'react-icons/bi';
 import { FaSearch } from 'react-icons/fa';
 import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { IconContext } from 'react-icons'; 
+import {AiFillCaretLeft, AiFillCaretRight} from 'react-icons/ai'
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -52,30 +52,51 @@ const BlogDetail = () => {
                 <li>Technology</li>
               </ul>
             </div>
-            <div className="share d-flex">
+            {/* <div className="share d-flex">
                 <h3>Share</h3>
                 <IconContext.Provider value={{ color: '#F7941D', size: '3rem' }}>
                 <FaWhatsapp />
                 <FaFacebook />
                 <FaInstagram />
               </IconContext.Provider>
-            </div>
+            </div> */}
+                <div className="share d-flex">
+                  <h3>Share</h3>
+                  <IconContext.Provider value={{ color: '#F7941D', size: '2rem' }}>
+                    <div className="icon-container">
+                      <FaWhatsapp />
+                    </div>
+                    <div className="icon-container">
+                      <FaFacebook />
+                    </div>
+                    <div className="icon-container">
+                      <FaInstagram />
+                    </div>
+                  </IconContext.Provider>
+                </div>
           </div>
+          <hr/>
           <div className="d-flex justify-content-between">
+            <div>
+            <AiFillCaretLeft color="orange"/>
             <button
               onClick={goToPreviousBlog}
               disabled={blog.id === 1} 
-              className="btn btn-secondary"
+              className="blog-button"
             >
               Previous Blog
             </button>
+            </div>
+            <div>
             <button
               onClick={goToNextBlog}
               disabled={blog.id === blogData.length}
-              className="btn btn-secondary"
+              className="blog-button"
             >
               Next Blog
             </button>
+            <AiFillCaretRight color="orange"/>
+            </div>
           </div>
         </div>
         <div className="col-md-4">

@@ -1,6 +1,7 @@
 import React from 'react';
 import blogData from '../../data/blogdata';
 import BlogCard from './BlogCards';
+import Pagination from './Pagination';
 
 const BlogList = () => {
   return (
@@ -10,6 +11,7 @@ const BlogList = () => {
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
+      <Pagination/>
     </div>
   );
 };

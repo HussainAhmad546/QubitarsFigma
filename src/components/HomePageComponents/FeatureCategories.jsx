@@ -13,10 +13,9 @@ const Products = () => {
                 <div className='product-card' key={index}>
                     <h4>{products.category}</h4>
                     <div className='images'>
-                        <img src={products.pic1}  alt='dull'/>
-                        <img src={products.pic2} alt='dull'/>
-                        <img src={products.pic3} alt='dull' />
-                        
+                        <img src={products.pic1}  alt='dull' style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', padding:'10px'}}/>
+                        <img src={products.pic2} alt='dull'style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', padding:'10px'}}/>
+                        <img src={products.pic3} alt='dull' style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', padding:'10px'}} />
                     </div>
                 </div>
             ))}

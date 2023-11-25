@@ -1,69 +1,68 @@
-import bagPic1 from "../images/Bag-1.png"
-import bagPic2 from "../images/Bag-2.png"
-import bagPic3 from "../images/Bag-3.png"
-
-import shoepic1 from "../images/shoes-1.png"
-import shoepic2 from "../images/shoes-2.png"
-import shoepic3 from "../images/shoes-3.png"
-
-import glassespic1 from "../images/glasses-1.png"
-import glassespic2 from "../images/glasses-2.png"
-
-import watchpic2 from "../images/watch-2.png"
-import watchpic1 from "../images/watch-1.png"
-
-import ringpic1 from "../images/jwellery-1.png"
-import ringpic2 from "../images/jwellery-2.png"
-
-import walletpic1 from "../images/wallet-1.png"
-import walletpic2 from "../images/wallet-2.png"
+import JG20 from '../images/JG20-1.jpg'
+import JG202 from '../images/JG20-2.jpg'
+import JG203 from '../images/JG20-3.jpg'
+import my275 from '../images/my275-1.jpg'
+import my275_2 from '../images/my275-2.jpg'
+import my275_3 from '../images/my275-3.jpg'
+import RS_A01_1 from '../images/RS-A01-1.jpg'
+import RS_A01_2 from '../images/RS-A01-2.jpg'
+import RS_A01_3 from '../images/RS-A01-3.jpg'
+import RS_A08_1 from '../images/RS-A08-1.jpg'
+import RS_A08_2 from '../images/RS-A08-2.jpg'
+import RS_A08_3 from '../images/RS-A08-3.jpg'
+import XW_C05_1 from '../images/XW-CO5-1.jpg'
+import XW_C05_2 from '../images/XW-CO5-2.jpg'
+import XW_C05_3 from '../images/XW-CO5-3.jpg'
+import XWXL09_1 from '../images/XWXL09-1.jpg'
+import XWXL09_2 from '../images/XWXL09-2.jpg'
+import XWXL09_3 from '../images/XWXL09-3.jpg'
    
    
   export const products=[
     {
-        category:"bag",
-        pic1:bagPic1,
-        pic2:bagPic2,
-        pic3: bagPic3,
+        category:"JG20",
+        pic1:JG20,
+        pic2:JG202,
+        pic3: JG203,
 
     },
        {
-           category: "shoe",
-           pic1: shoepic1,
-           pic2: shoepic2,
-           pic3: shoepic3,
+           category: "MY275",
+           pic1: my275,
+           pic2: my275_2,
+           pic3: my275_3,
 
        },
 
        {
-           category: "glasses",
-           pic1: glassespic1,
-           pic2: glassespic2,
-           pic3: glassespic1,
+           category: "RS-A01",
+           pic1: RS_A01_1,
+           pic2: RS_A01_2,
+           pic3: RS_A01_3,
 
        },
 
        {
-           category: "watch",
-           pic1: watchpic2,
-           pic2: watchpic1,
-           pic3: watchpic2,
+           category: "RS-A08",
+           pic1: RS_A08_1,
+           pic2: RS_A08_2,
+           pic3: RS_A08_3,
 
        },
 
        {
-           category: "ring",
-           pic1: ringpic1,
-           pic2: ringpic2,
-           pic3: ringpic1,
+           category: "XWC05",
+           pic1: XW_C05_1,
+           pic2: XW_C05_2,
+           pic3: XW_C05_3,
 
        },
 
        {
-           category: "wallet",
-           pic1: walletpic1,
-           pic2: walletpic2,
-           pic3: walletpic1,
+           category: "XWXL09",
+           pic1: XWXL09_1,
+           pic2: XWXL09_2,
+           pic3: XWXL09_3,
 
 },
 ]

@@ -6,7 +6,7 @@ const QuotePage = () => {
     <>
       <div className="our-blog">
         <div className="container text-center">
-          <h1>Get a Quotessss</h1>
+          <h1>Get a Quote</h1>
           <p>
             You offer a good product, make advertising, analyze the market but
             <br />

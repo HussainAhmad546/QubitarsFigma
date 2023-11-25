@@ -52,14 +52,6 @@ const BlogDetail = () => {
                 <li>Technology</li>
               </ul>
             </div>
-            {/* <div className="share d-flex">
-                <h3>Share</h3>
-                <IconContext.Provider value={{ color: '#F7941D', size: '3rem' }}>
-                <FaWhatsapp />
-                <FaFacebook />
-                <FaInstagram />
-              </IconContext.Provider>
-            </div> */}
                 <div className="share d-flex">
                   <h3>Share</h3>
                   <IconContext.Provider value={{ color: '#F7941D', size: '2rem' }}>

@@ -95,26 +95,25 @@
 
 @media (max-width: 768px) {
   .qoute-container {
-    width: 90%; /* Adjust the width as needed for smaller screens */
-    margin-top: 0; /* Remove the margin for smaller screens */
-    padding: 20px; /* Add padding for smaller screens if needed */
+    width: 90%;
+    margin-top: 0;
+    padding: 20px;
   }
 }
 
   @media (max-width: 768px) {
     .contact-us-container {
-      flex-direction: column; /* Stack items vertically in mobile view */
+      flex-direction: column;
       padding: 20px 0;
     }
   
     .contact-us-left,
     .contact-us-right {
-      width: 100%; /* Full width for both columns */
-      margin: 10px 0; /* Add some margin between the columns */
-    }
+      width: 100%; 
+      margin: 10px 0;
   }
+}
 
-  /* Adjust styles for screens smaller than 768px (e.g., mobile) */
 @media (max-width: 768px) {
   .contact-us-right {
     width: 100%;

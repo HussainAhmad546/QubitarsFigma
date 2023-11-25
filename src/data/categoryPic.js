@@ -7,36 +7,52 @@ import pic6 from "../images/Bag.png"
 export  const category=[
     {
         pic:pic1,
-        name:"CHAIR"
+        name:"CHAIR",
+        price: '$9.99',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
     },
       {
           pic: pic2,
-          name: "HEADPHONE"
+          name: "HEADPHONE",
+          price: '$9.99',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       },
       {
           pic: pic3,
-          name: "SOFA"
+          name: "SOFA",
+          price: '$9.99',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       },
       {
           pic: pic4,
-          name: "SMART WATCH"
+          name: "SMART WATCH",
+          price: '$9.99',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       },
       {
           pic: pic5,
-          name: "SHOES"
+          name: "SHOES",
+          price: '$9.99',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       },
 
       {
           pic: pic6,
-          name: "BAGS"
+          name: "BAGS",
+          price: '$9.99',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
       },
       {
         pic: pic5,
-        name: "SHOES"
+        name: "SHOES",
+        price: '$9.99',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
     },
 
     {
         pic: pic6,
-        name: "BAGS"
+        name: "BAGS",
+        price: '$9.99',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a, atque molestias non quo',
     }
 ]

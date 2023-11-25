@@ -76,9 +76,9 @@ const SingleProduct = () => {
                   <tr>
                       <td>Color</td>
                      <td>
-                <button className='color-button' style={{ backgroundColor: '#FF0000' }} onClick={() => handleColorChange('#FF0000')}></button>
-                <button className='color-button' style={{ backgroundColor: '#D3D3D3' }} onClick={() => handleColorChange('#D3D3D3')}></button>
-                <button className='color-button' style={{ backgroundColor: '#000000' }} onClick={() => handleColorChange('#000000')}></button>
+                <button className='color-button' style={{ backgroundColor: '#FF0000',height:'30px' }} onClick={() => handleColorChange('#FF0000')}></button>
+                <button className='color-button' style={{ backgroundColor: '#D3D3D3',height:'30px' }} onClick={() => handleColorChange('#D3D3D3')}></button>
+                <button className='color-button' style={{ backgroundColor: '#000000',height:'30px'}} onClick={() => handleColorChange('#000000')}></button>
               </td>
                   </tr>
 

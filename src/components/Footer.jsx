@@ -33,15 +33,15 @@ return (
                   <h4>Contact</h4>
                   <ul>
                       <li>Contact us</li>
-                      <li>yourexample@gmail.com</li>
-                      <li>example@gmail.com</li>
+                      <li>example1@gmail.com</li>
+                      <li>example2@gmail.com</li>
                       <li>Call Us: +1 245 8948-4343</li>
                   </ul>
               </div>
               <div className='box'>
                   <h4>Our Information</h4>
                   <ul>
-                    <li>privicy policy update</li>
+                    <li>privicy policy</li>
                     <li>Term And Condition</li>
                     <li>Support Page</li>
                   </ul>

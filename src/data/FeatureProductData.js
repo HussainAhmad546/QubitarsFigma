@@ -24,7 +24,6 @@ import XWXL09_3 from '../images/XWXL09-3.jpg'
         pic1:JG20,
         pic2:JG202,
         pic3: JG203,
-
     },
        {
            category: "MY275",

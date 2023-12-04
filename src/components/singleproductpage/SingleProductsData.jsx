@@ -8,7 +8,7 @@ import FeaturedCategories from './FeaturedCategories'
 
 const SingleProduct = () => {
     const [selectedColor, setSelectedColor] = useState('#FF0000');
-    const [selectedSize, setSelectedSize] = useState('medium');
+    const [selectedSize, setSelectedSize] = useState('large');
     let { productId } = useParams();
     const product = productData.find((p) => p.id.toString() === productId);
     if (!product) {

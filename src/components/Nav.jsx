@@ -54,35 +54,35 @@ const Nav = () => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineLaptop/>Laptop
+                    <AiOutlineLaptop/>JG20
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineMobile/>Mobile
+                    <AiOutlineMobile/>MY275
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineHome/>Home Devices
+                    <AiOutlineHome/>YY26
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineMobile/>LCD
+                    <AiOutlineMobile/>XWC05
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineMobile/>Keyboard
+                    <AiOutlineMobile/>XWXL09
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 </ul>

@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 import { Modal, Box } from '@mui/material';
 import {AiOutlineLaptop, AiOutlineMobile, AiOutlineHome} from 'react-icons/ai'
 import {IoIosArrowForward} from 'react-icons/io'
+import JG20 from '../../src/images/JG20-1.jpg'
+import MY275 from '../../src/images/my275-1.jpg'
+import YY26 from '../../src/images/YY26-1.jpg'
+import XWC05 from '../../src/images/XW-CO5-1.jpg'
+import XWXL09 from '../../src/images/XWXL09-1.jpg'
  
 
 const Nav = () => {
@@ -54,35 +59,35 @@ const Nav = () => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineLaptop/>JG20
+                    <img src={JG20} height={30} width={40}/> JG20
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineMobile/>MY275
+                    <img src={MY275} height={30} width={40}/>MY275
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineHome/>YY26
+                    <img src={YY26} height={30} width={40}/>YY26
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineMobile/>XWC05
+                    <img src={XWC05} height={30} width={40}/>XWC05
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <AiOutlineMobile/>XWXL09
+                    <img src={XWXL09} height={30} width={40}/>XWXL09
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 </ul>

@@ -40,28 +40,4 @@ import XWXL09_3 from '../images/XWXL09-3.jpg'
            pic3: RS_A01_3,
 
        },
-
-       {
-           category: "RS-A08",
-           pic1: RS_A08_1,
-           pic2: RS_A08_2,
-           pic3: RS_A08_3,
-
-       },
-
-       {
-           category: "XWC05",
-           pic1: XW_C05_1,
-           pic2: XW_C05_2,
-           pic3: XW_C05_3,
-
-       },
-
-       {
-           category: "XWXL09",
-           pic1: XWXL09_1,
-           pic2: XWXL09_2,
-           pic3: XWXL09_3,
-
-},
 ]

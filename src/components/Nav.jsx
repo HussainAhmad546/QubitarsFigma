@@ -36,8 +36,8 @@ const Nav = () => {
                 <ul>
                     <li onClick={()=>navigate("/")}>Home</li>
                     <li onClick={()=>navigate("/about")}>About</li>
-                    <li onClick={()=>navigate("/service")}>Service</li>
-                    <li onClick={()=>navigate("/blog")}>Blog</li>
+                    {/* <li onClick={()=>navigate("/service")}>Service</li>
+                   <li onClick={()=>navigate("/blog")}>Blog</li> */}
                     <li onClick={()=>navigate("/contact")}>Contact</li>
                     <li onClick={() => navigate("/products")}>Products</li>
 

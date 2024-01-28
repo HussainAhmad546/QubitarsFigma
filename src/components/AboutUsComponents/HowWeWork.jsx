@@ -25,7 +25,7 @@ const HowWeWork = () => {
           </>
         ) : (
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=Tuw8hxrFBH8&t=223s" // Replace with your video URL
+            url="https://www.youtube.com/watch?v=-v2uwpK5yCA" // Replace with your video URL
             playing
             controls
             width="800px"

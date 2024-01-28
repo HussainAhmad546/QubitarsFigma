@@ -1,8 +1,9 @@
 .our-blog {
-    background-color: #0F75BC;
     color: white;
     text-align: center;
     padding: 40px 0;
+    background-image: url(../images/OurBlog.png);
+    height: 300px;
   }
   
   .contact-us-container {

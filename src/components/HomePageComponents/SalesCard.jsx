@@ -3,7 +3,7 @@ import '../../styles/SalesCard.css';
 import SalePic1 from '../../images/sale Pic 1.png';
 import SalePic2 from '../../images/Sale Pic 2.png';
 import TwoWatches from '../../images/TwoWatches.png';
-import SaleJug from '../../images/Sale Jug.png';
+// import SaleJug from '../../images/Sale Jug.png';
 
 const SalesCard = () => {
   return (
@@ -32,7 +32,7 @@ const SalesCard = () => {
            </div>
         </div>
         <div className="col-lg-4 d-none d-lg-block">
-          <div className="right-section" style={{ background: `url(${SaleJug})`, backgroundSize: 'cover', height: '400px', width:'100%' }}>
+          <div className="right-section" style={{ background: `url(${TwoWatches})`, backgroundSize: 'cover', height: '400px', width:'100%' }}>
 
           </div>
         </div>

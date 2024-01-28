@@ -59,35 +59,35 @@ const Nav = () => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <img src={JG20} height={30} width={40}/> JG20
+                    <img src={JG20} height={30} width={40} style={{marginRight:'5px'}}/> JG20
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <img src={MY275} height={30} width={40}/>MY275
+                    <img src={MY275} height={30} width={40} style={{marginRight:'5px'}}/>MY275
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <img src={YY26} height={30} width={40}/>YY26
+                    <img src={YY26} height={30} width={40} style={{marginRight:'5px'}}/>XD26
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <img src={XWC05} height={30} width={40}/>XWC05
+                    <img src={XWC05} height={30} width={40} style={{marginRight:'5px'}}/>XD26-II
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 <li onClick={() => {
                     closeModal();
                     navigate("/products")
                   }}>
-                    <img src={XWXL09} height={30} width={40}/>XWXL09
+                    <img src={XWXL09} height={30} width={40} style={{marginRight:'5px'}}/>M20
                     <span className="arrow-icon"><IoIosArrowForward /></span>
                 </li><hr/>
                 </ul>

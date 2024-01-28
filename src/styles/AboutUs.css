@@ -37,13 +37,17 @@
 
 
 .about-main{
-    background-image: url(../images/AboutPic.png);
+    background-image: url(../images/sambike2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
 
 .about-main{
     width: 100%;
     height: 37.875rem;
     padding: 7.9rem 0rem 0rem 5.75rem; 
+    background-color: rgb(236, 249, 255);
 }
 
 .about-content{
@@ -62,21 +66,21 @@ font-family: Inter;
 }
 .about-content h1{
     font-family: Inter;
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 550;
     line-height: 80px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: black;
 }
 .about-content p{
     font-family: Inter;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 19px;
+    font-weight: 50;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: black;
         
 }
 .about-content button{

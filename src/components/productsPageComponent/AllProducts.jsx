@@ -11,7 +11,7 @@ const Products = () => {
   };
 
   return (
-    <div className='products-container all-products-container'>
+    <div className='products-container all-products-container' style={{border:'1px solid red'}}>
       <h1>Accessories</h1>
       <hr className='products-hr' />
       <div className="products">

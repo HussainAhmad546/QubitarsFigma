@@ -7,15 +7,6 @@ import my275_3 from '../images/my275-3.jpg'
 import RS_A01_1 from '../images/RS-A01-1.jpg'
 import RS_A01_2 from '../images/RS-A01-2.jpg'
 import RS_A01_3 from '../images/RS-A01-3.jpg'
-import RS_A08_1 from '../images/RS-A08-1.jpg'
-import RS_A08_2 from '../images/RS-A08-2.jpg'
-import RS_A08_3 from '../images/RS-A08-3.jpg'
-import XW_C05_1 from '../images/XW-CO5-1.jpg'
-import XW_C05_2 from '../images/XW-CO5-2.jpg'
-import XW_C05_3 from '../images/XW-CO5-3.jpg'
-import XWXL09_1 from '../images/XWXL09-1.jpg'
-import XWXL09_2 from '../images/XWXL09-2.jpg'
-import XWXL09_3 from '../images/XWXL09-3.jpg'
    
    
   export const products=[

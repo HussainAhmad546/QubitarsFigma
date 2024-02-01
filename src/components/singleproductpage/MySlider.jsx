@@ -1,77 +1,58 @@
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 
-// const MySlider = () => {
-//     const settings = {
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 3,
-//         slidesToScroll: 1
-//     };
-
-//     return (
-//         <>
-//         <div style={{ maxWidth: '600px', margin: '0 auto' , border:'1px solid red', height:'600px'}}>
-//         <Slider {...settings}>
-//             <div>
-//                 <h3>Slide 1</h3>
-//             </div>
-//             <div>
-//                 <h3>Slide 2</h3>
-//             </div>
-//             <div>
-//                 <h3>Slide 3</h3>
-//             </div>
-//             {/* Add more slides here */}
-//         </Slider>
-//         </div>
-//         </>
-//     );
-// }
-
-
-// export default MySlider;
-
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
-const MySlider = () => {
-    const settings = {
-        dots: true,
-        dotsClass: 'slick-dots-custom', // Add a custom class for styling dots
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1, // Show only one slide at a time
-        slidesToScroll: 1,
-        centerMode: true, // Center the slides
-        centerPadding: '25%', // Add padding on the sides for centering
-        appendDots: dots => (
-            <div>
-                <ul style={{ margin: 0 }}>{dots}</ul> {/* Ensure dots are displayed in a list without any margin */}
-            </div>
-        )
-    };
-
-    return (
-        <div style={{ maxWidth: '600px', margin: '0 auto', border:'1px solid red' }}>
-            <Slider {...settings}>
-                <div>
-                    <h3 style={{ height: '300px', lineHeight: '300px', textAlign: 'center' }}>Slide 1</h3> {/* Adjust the height of the slide */}
-                </div>
-                <div>
-                    <h3 style={{ height: '300px', lineHeight: '300px', textAlign: 'center' }}>Slide 2</h3>
-                </div>
-                <div>
-                    <h3 style={{ height: '300px', lineHeight: '300px', textAlign: 'center' }}>Slide 3</h3>
-                </div>
-                
-                {/* Add more slides here */}
-            </Slider>
-        </div>
-    );
+const spanStyle = {
+  padding: '20px',
+  background: '#efefef',
+  color: '#000000'
 }
 
-export default MySlider;
+const divStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundSize: 'cover',
+  height: '500px',
+//   width:'50%'
+}
+const slideImages = [
+  {
+    url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+
+  },
+  
+];
+
+const MySlider = () => {
+    const slideProperties = {
+        duration: 1000,
+        transitionDuration: 500,
+        infinite: true,
+        indicators: true,
+        arrows: true
+    };
+    return (
+      <div className="slide-container col-lg-12">
+        <Slide {...slideProperties}>
+         {slideImages.map((slideImage, index)=> (
+            <div key={index}>
+              <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+              </div>
+            </div>
+          ))} 
+        </Slide>
+      </div>
+    )
+}
+
+export default MySlider
+

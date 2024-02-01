@@ -4,7 +4,6 @@ import '../styles/Nav.css';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Modal, Box } from '@mui/material';
-import {AiOutlineLaptop, AiOutlineMobile, AiOutlineHome} from 'react-icons/ai'
 import {IoIosArrowForward} from 'react-icons/io'
 import JG20 from '../../src/images/JG20-1.jpg'
 import MY275 from '../../src/images/my275-1.jpg'
@@ -36,8 +35,6 @@ const Nav = () => {
                 <ul>
                     <li onClick={()=>navigate("/")}>Home</li>
                     <li onClick={()=>navigate("/about")}>About</li>
-                    {/* <li onClick={()=>navigate("/service")}>Service</li>
-                   <li onClick={()=>navigate("/blog")}>Blog</li> */}
                     <li onClick={()=>navigate("/contact")}>Contact</li>
                     <li onClick={() => navigate("/products")}>Products</li>
 

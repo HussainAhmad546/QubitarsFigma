@@ -3,7 +3,6 @@ import '../../styles/SalesCard.css';
 import SalePic1 from '../../images/sale Pic 1.png';
 import SalePic2 from '../../images/Sale Pic 2.png';
 import TwoWatches from '../../images/TwoWatches.png';
-// import SaleJug from '../../images/Sale Jug.png';
 
 const SalesCard = () => {
   return (
